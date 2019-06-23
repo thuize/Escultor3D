@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>751</width>
-    <height>503</height>
+    <width>684</width>
+    <height>623</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,20 +17,59 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>731</width>
-      <height>411</height>
+      <x>1</x>
+      <y>10</y>
+      <width>661</width>
+      <height>541</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="70,30">
+    <layout class="QVBoxLayout" name="verticalLayout_11">
      <item>
-      <widget class="Plotter" name="widget" native="true"/>
+      <layout class="QHBoxLayout" name="horizontalLayout_15">
+       <item>
+        <widget class="QPushButton" name="pushButton_Novo">
+         <property name="text">
+          <string>Novo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Salvar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>Put Voxel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>Cut Voxel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_SelecionaCor">
+         <property name="text">
+          <string>Selecionar Cor</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
+      <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="70,30">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_8">
+        <widget class="Plotter" name="widget" native="true"/>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
@@ -110,179 +149,241 @@
           </layout>
          </item>
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
            <item>
-            <widget class="QLabel" name="label_3">
-             <property name="text">
-              <string>Retângulo</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_4">
-               <item>
-                <widget class="QLabel" name="label_6">
-                 <property name="text">
-                  <string>X</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QSlider" name="horizontalSlider_Xret">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLCDNumber" name="lcdNumber_Xret"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_5">
-               <item>
-                <widget class="QLabel" name="label_7">
-                 <property name="text">
-                  <string>Y</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QSlider" name="horizontalSlider_Yret">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLCDNumber" name="lcdNumber_Yret"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="label_8">
-                 <property name="text">
-                  <string>Z</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QSlider" name="horizontalSlider_Zret">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLCDNumber" name="lcdNumber_Zret"/>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_7">
-           <item>
-            <widget class="QLabel" name="label_13">
-             <property name="text">
-              <string>Raio esfera</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_10">
-             <item>
-              <widget class="QSlider" name="horizontalSlider_RaioEsfera">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Retângulo</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLCDNumber" name="lcdNumber_RaioEsfera"/>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_5">
+                   <property name="text">
+                    <string>Put Rect</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_6">
+                   <property name="text">
+                    <string>Cut Rect</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>X</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Xret">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLCDNumber" name="lcdNumber_Xret"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>Y</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Yret">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLCDNumber" name="lcdNumber_Yret"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>Z</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Zret">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLCDNumber" name="lcdNumber_Zret"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_5">
            <item>
-            <widget class="QLabel" name="label_9">
-             <property name="text">
-              <string>Raio Elipsoide</string>
-             </property>
-            </widget>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QPushButton" name="pushButton_7">
+                 <property name="text">
+                  <string>Put Sphere</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_8">
+                 <property name="text">
+                  <string>Cut Sphere</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Raio esfera</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QSlider" name="horizontalSlider_RaioEsfera">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumber_RaioEsfera"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_6">
+            <layout class="QVBoxLayout" name="verticalLayout_8">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Raio Elipsoide</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
                <item>
-                <widget class="QLabel" name="label_10">
+                <widget class="QPushButton" name="pushButton_9">
                  <property name="text">
-                  <string>X</string>
+                  <string>Put Ellipsoid</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QSlider" name="horizontalSlider_Xellipsoid">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
+                <widget class="QPushButton" name="pushButton_10">
+                 <property name="text">
+                  <string>Cut Ellipsoid</string>
                  </property>
                 </widget>
-               </item>
-               <item>
-                <widget class="QLCDNumber" name="lcdNumber_Xellipsoid"/>
                </item>
               </layout>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
                <item>
-                <widget class="QLabel" name="label_11">
-                 <property name="text">
-                  <string>Y</string>
-                 </property>
-                </widget>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>X</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Xellipsoid">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumber_Xellipsoid"/>
+                 </item>
+                </layout>
                </item>
                <item>
-                <widget class="QSlider" name="horizontalSlider_Yellipsoid">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                </widget>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>Y</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Yellipsoid">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumber_Yellipsoid"/>
+                 </item>
+                </layout>
                </item>
                <item>
-                <widget class="QLCDNumber" name="lcdNumber_Yellipsoid"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_9">
-               <item>
-                <widget class="QLabel" name="label_12">
-                 <property name="text">
-                  <string>Z</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QSlider" name="horizontalSlider_Zellipsoid">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLCDNumber" name="lcdNumber_Zellipsoid"/>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Z</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Zellipsoid">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumber_Zellipsoid"/>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>
@@ -291,13 +392,6 @@
           </layout>
          </item>
         </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_SelecionaCor">
-         <property name="text">
-          <string>Selecionar Cor</string>
-         </property>
-        </widget>
        </item>
       </layout>
      </item>
@@ -309,7 +403,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>751</width>
+     <width>684</width>
      <height>21</height>
     </rect>
    </property>
@@ -360,12 +454,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>644</x>
-     <y>352</y>
+     <x>584</x>
+     <y>513</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>360</y>
+     <x>654</x>
+     <y>514</y>
     </hint>
    </hints>
   </connection>
@@ -376,12 +470,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>636</x>
-     <y>381</y>
+     <x>584</x>
+     <y>544</y>
     </hint>
     <hint type="destinationlabel">
-     <x>684</x>
-     <y>383</y>
+     <x>654</x>
+     <y>545</y>
     </hint>
    </hints>
   </connection>
@@ -392,12 +486,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>641</x>
-     <y>414</y>
+     <x>584</x>
+     <y>575</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>416</y>
+     <x>654</x>
+     <y>576</y>
     </hint>
    </hints>
   </connection>
@@ -408,12 +502,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>646</x>
-     <y>301</y>
+     <x>585</x>
+     <y>429</y>
     </hint>
     <hint type="destinationlabel">
-     <x>667</x>
-     <y>301</y>
+     <x>655</x>
+     <y>430</y>
     </hint>
    </hints>
   </connection>
@@ -424,12 +518,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>649</x>
-     <y>242</y>
+     <x>583</x>
+     <y>344</y>
     </hint>
     <hint type="destinationlabel">
-     <x>665</x>
-     <y>243</y>
+     <x>653</x>
+     <y>345</y>
     </hint>
    </hints>
   </connection>
@@ -440,12 +534,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>639</x>
-     <y>217</y>
+     <x>583</x>
+     <y>313</y>
     </hint>
     <hint type="destinationlabel">
-     <x>677</x>
-     <y>216</y>
+     <x>653</x>
+     <y>314</y>
     </hint>
    </hints>
   </connection>
@@ -456,12 +550,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>645</x>
-     <y>182</y>
+     <x>583</x>
+     <y>282</y>
     </hint>
     <hint type="destinationlabel">
-     <x>678</x>
-     <y>181</y>
+     <x>653</x>
+     <y>283</y>
     </hint>
    </hints>
   </connection>
@@ -472,12 +566,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>641</x>
-     <y>128</y>
+     <x>585</x>
+     <y>195</y>
     </hint>
     <hint type="destinationlabel">
-     <x>677</x>
-     <y>131</y>
+     <x>655</x>
+     <y>196</y>
     </hint>
    </hints>
   </connection>
@@ -488,12 +582,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>634</x>
-     <y>90</y>
+     <x>585</x>
+     <y>164</y>
     </hint>
     <hint type="destinationlabel">
-     <x>684</x>
-     <y>98</y>
+     <x>655</x>
+     <y>165</y>
     </hint>
    </hints>
   </connection>
@@ -504,12 +598,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>642</x>
-     <y>69</y>
+     <x>585</x>
+     <y>133</y>
     </hint>
     <hint type="destinationlabel">
-     <x>686</x>
-     <y>69</y>
+     <x>655</x>
+     <y>134</y>
     </hint>
    </hints>
   </connection>

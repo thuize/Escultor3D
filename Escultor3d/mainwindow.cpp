@@ -5,6 +5,7 @@
 #include <QColorDialog>
 #include <QColor>
 #include <QAction>
+#include "dimensao.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -37,4 +38,12 @@ void MainWindow::on_pushButton_SelecionaCor_clicked(bool checked)
     box.setText(msg);
     box.exec();
     repaint();
+}
+
+void MainWindow::on_pushButton_Novo_clicked()
+{
+    Dimensao novo;
+    novo.exec();
+
+
 }

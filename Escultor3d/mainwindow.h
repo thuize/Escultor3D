@@ -27,6 +27,7 @@ public slots:
 //void mudaCor();
 private slots:
 void on_pushButton_SelecionaCor_clicked(bool checked);
+void on_pushButton_Novo_clicked();
 };
 
 

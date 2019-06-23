@@ -11,6 +11,15 @@ Plotter::Plotter(QWidget *parent) : QWidget(parent)
 
 void Plotter::paintEvent(QPaintEvent *event)
 {
+
+    Dimensao dx,dy,dz;
+    int x,y,z;
+   /* x=width()/dx.getDimensaoX();
+    y=height()/dy.getDimensaoY();
+    z=dz.getDimensaoZ();
+    if(x==NULL || y==NULL || z==NULL){*/
+        x=100,y=100,z=100;
+    //}
     QPainter painter(this);
     QBrush brush;
     QPen pen;
@@ -24,10 +33,15 @@ void Plotter::paintEvent(QPaintEvent *event)
     painter.setBrush(brush);
     painter.setPen(pen);
 
-    for(int i =0; i<width(); i= i+5){
-        for(int j =0; j<height(); j = j+5){
-            painter.drawRect(i,j,5,5);
+    // XY
 
-}
-}
+   for(int i =0; i<width();i=i+x){
+        for(int j =0; j<height();j=j+x){
+
+            painter.drawRect(i,j,x,y);
+
+
+        }
+    }
+
 }

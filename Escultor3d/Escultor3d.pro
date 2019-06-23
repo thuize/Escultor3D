@@ -25,17 +25,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    dimensao.cpp \
         main.cpp \
         mainwindow.cpp \
     plotter.cpp \
     sculptor.cpp
 
 HEADERS += \
+    dimensao.h \
         mainwindow.h \
     plotter.h \
     sculptor.h
 
 FORMS += \
+        dimensao.ui \
         mainwindow.ui
 
 # Default rules for deployment.
