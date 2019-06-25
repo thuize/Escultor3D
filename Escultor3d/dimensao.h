@@ -19,6 +19,8 @@ public:
     int getDimensaoY();
     int getDimensaoZ();
 
+public slots:
+
 private slots:
 
     void on_pushButton_NovaEscultura_clicked();

@@ -1,6 +1,6 @@
 #include "dimensao.h"
 #include "ui_dimensao.h"
-
+#include "QDialog"
 
 Dimensao::Dimensao(QWidget *parent) :
     QDialog(parent),
@@ -31,7 +31,9 @@ int Dimensao::getDimensaoZ()
 
 void Dimensao::on_pushButton_NovaEscultura_clicked()
 {
+    hide();
     form2 = new MainWindow(this);
     form2->show();
+
 
 }
