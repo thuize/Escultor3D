@@ -13,6 +13,7 @@
 using std::fstream;
 
 /**
+ * @brief Classe Sculptor
  * @details	Construtor da classe "sculptor".
  */
 Sculptor::Sculptor(int _nz, int _ny, int _nx){

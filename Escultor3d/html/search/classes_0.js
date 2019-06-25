@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dimensao',['Dimensao',['../classDimensao.html',1,'']]]
+  ['classe',['Classe',['../classClasse.html',1,'Classe'],['../classClasse.html',1,'Classe']]]
 ];

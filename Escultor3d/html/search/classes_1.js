@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainwindow',['MainWindow',['../classMainWindow.html',1,'']]]
+  ['dimensao',['Dimensao',['../classDimensao.html',1,'']]]
 ];
