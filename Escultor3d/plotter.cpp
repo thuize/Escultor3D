@@ -1,5 +1,5 @@
 #include "plotter.h"
-#include <Qpainter>
+#include <QPainter>
 #include <QBrush>
 #include <QPen>
 

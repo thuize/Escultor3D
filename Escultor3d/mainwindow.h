@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <Qcolor>
+#include <QColor>
 
 namespace Ui {
 class MainWindow;
@@ -26,8 +26,8 @@ private:
 public slots:
 //void mudaCor();
 private slots:
-void on_pushButton_SelecionaCor_clicked(bool checked);
-void on_pushButton_Novo_clicked();
+void on_pushButton_SelecionaCor_clicked();
+
 };
 
 

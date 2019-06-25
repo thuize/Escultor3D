@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "mainwindow.h"
 
+
 namespace Ui {
 class Dimensao;
 }
@@ -24,6 +25,8 @@ public slots:
 private slots:
 
     void on_pushButton_NovaEscultura_clicked();
+
+    void on_horizontalSlider_DimensaoZ_valueChanged(int value);
 
 private:
     Ui::Dimensao *ui;

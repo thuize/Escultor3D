@@ -19,8 +19,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_SelecionaCor_clicked(bool checked)
+void MainWindow::on_pushButton_SelecionaCor_clicked()
 {
+
     int r, g, b;
     QColor cor;
     QMessageBox box;
