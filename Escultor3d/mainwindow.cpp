@@ -40,10 +40,9 @@ void MainWindow::on_pushButton_SelecionaCor_clicked(bool checked)
     repaint();
 }
 
-void MainWindow::on_pushButton_Novo_clicked()
+/*void MainWindow::on_pushButton_Novo_clicked()
 {
     Dimensao novo;
     novo.exec();
 
-
-}
+}*/

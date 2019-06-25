@@ -2,6 +2,7 @@
 #define DIMENSAO_H
 
 #include <QDialog>
+#include "mainwindow.h"
 
 namespace Ui {
 class Dimensao;
@@ -18,8 +19,13 @@ public:
     int getDimensaoY();
     int getDimensaoZ();
 
+private slots:
+
+    void on_pushButton_NovaEscultura_clicked();
+
 private:
     Ui::Dimensao *ui;
+    MainWindow *form2;
 };
 
 #endif // DIMENSAO_H
