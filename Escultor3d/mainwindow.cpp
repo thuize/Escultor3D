@@ -40,6 +40,25 @@ void MainWindow::on_pushButton_SelecionaCor_clicked()
     box.exec();
     repaint();
 }
+int MainWindow::getPosicaoX()
+{
+    return ui->lcdNumber_PosicaoX->value();
+}
+int MainWindow::getPosicaoY()
+{
+    return ui->lcdNumber_PosicaoY->value();
+}
+int MainWindow::getPosicaoZ()
+{
+    return ui->lcdNumber_PosicaoZ->value();
+}
+
+void MainWindow::posicaoAtual()
+{
+    int Px=getPosicaoX();
+    int Py=getPosicaoY();
+    int Pz=getPosicaoZ();
+}
 
 /*void MainWindow::on_pushButton_Novo_clicked()
 {
@@ -47,3 +66,5 @@ void MainWindow::on_pushButton_SelecionaCor_clicked()
     novo.exec();
 
 }*/
+
+

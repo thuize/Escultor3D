@@ -15,6 +15,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    int getPosicaoX();
+    int getPosicaoY();
+    int getPosicaoZ();
+    void posicaoAtual();
 
 private:
     Ui::MainWindow *ui;
@@ -28,6 +32,9 @@ public slots:
 private slots:
 void on_pushButton_SelecionaCor_clicked();
 
+
+void on_pushButton_3_toggled(bool checked);
+void on_pushButton_3_clicked();
 };
 
 

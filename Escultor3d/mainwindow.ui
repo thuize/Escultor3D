@@ -27,21 +27,21 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_15">
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pushButton_Salvar">
          <property name="text">
           <string>Salvar</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="pushButton_putVoxel">
          <property name="text">
           <string>Put Voxel</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="pushButton_cutVoxel">
          <property name="text">
           <string>Cut Voxel</string>
          </property>
@@ -91,7 +91,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLCDNumber" name="lcdNumber_Xsculptor"/>
+                <widget class="QLCDNumber" name="lcdNumber_PosicaoX"/>
                </item>
               </layout>
              </item>
@@ -112,7 +112,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLCDNumber" name="lcdNumber_Ysculptor"/>
+                <widget class="QLCDNumber" name="lcdNumber_PosicaoY"/>
                </item>
               </layout>
              </item>
@@ -133,7 +133,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLCDNumber" name="lcdNumber_Zsculptor"/>
+                <widget class="QLCDNumber" name="lcdNumber_PosicaoZ"/>
                </item>
               </layout>
              </item>
@@ -157,14 +157,14 @@
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_13">
                  <item>
-                  <widget class="QPushButton" name="pushButton_5">
+                  <widget class="QPushButton" name="pushButton_putRect">
                    <property name="text">
                     <string>Put Rect</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_6">
+                  <widget class="QPushButton" name="pushButton_cutRect">
                    <property name="text">
                     <string>Cut Rect</string>
                    </property>
@@ -248,14 +248,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_11">
                <item>
-                <widget class="QPushButton" name="pushButton_7">
+                <widget class="QPushButton" name="pushButton_putSphere">
                  <property name="text">
                   <string>Put Sphere</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_8">
+                <widget class="QPushButton" name="pushButton_cutSphere">
                  <property name="text">
                   <string>Cut Sphere</string>
                  </property>
@@ -298,14 +298,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_12">
                <item>
-                <widget class="QPushButton" name="pushButton_9">
+                <widget class="QPushButton" name="pushButton_putEllipsoid">
                  <property name="text">
                   <string>Put Ellipsoid</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_10">
+                <widget class="QPushButton" name="pushButton_cutEllipsoid">
                  <property name="text">
                   <string>Cut Ellipsoid</string>
                  </property>
@@ -555,7 +555,7 @@
   <connection>
    <sender>horizontalSlider_Zsculptor</sender>
    <signal>sliderMoved(int)</signal>
-   <receiver>lcdNumber_Zsculptor</receiver>
+   <receiver>lcdNumber_PosicaoZ</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -571,7 +571,7 @@
   <connection>
    <sender>horizontalSlider_Ysculptor</sender>
    <signal>sliderMoved(int)</signal>
-   <receiver>lcdNumber_Ysculptor</receiver>
+   <receiver>lcdNumber_PosicaoY</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -587,7 +587,7 @@
   <connection>
    <sender>horizontalSlider_Xsculptor</sender>
    <signal>sliderMoved(int)</signal>
-   <receiver>lcdNumber_Xsculptor</receiver>
+   <receiver>lcdNumber_PosicaoX</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">

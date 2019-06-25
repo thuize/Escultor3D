@@ -34,13 +34,14 @@ int Dimensao::getDimensaoZ()
 
 void Dimensao::on_pushButton_NovaEscultura_clicked()
 {
-    hide();
+    //hide();
     form2 = new MainWindow(this);
     form2->show();
     int Dx=getDimensaoX();
     int Dy=getDimensaoY();
     int Dz=getDimensaoZ();
     Sculptor a(Dz,Dy,Dx);
+
     QMessageBox box;
     QString msg;
     msg = "x = <b>"+QString::number(Dx)+"</b> <br>"+
