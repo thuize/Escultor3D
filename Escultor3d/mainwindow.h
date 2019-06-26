@@ -124,6 +124,20 @@ void on_pushButton_Salvar_clicked();
  * @details Método para a ação de clique do botão de novo
  */
 void on_pushButton_Novo_clicked();
+void on_pushButton_cutVoxel_clicked();
+void on_pushButton_putRect_clicked();
+int getx1Rect();
+int getz1Rect();
+int gety1Rect();
+void on_pushButton_cutRect_clicked();
+void on_pushButton_putSphere_clicked();
+int getRadiusSphere();
+void on_pushButton_cutSphere_clicked();
+int getRXEllipsoid();
+int getRYEllipsoid();
+int getRZEllipsoid();
+void on_pushButton_putEllipsoid_clicked();
+void on_pushButton_cutEllipsoid_clicked();
 };
 
 

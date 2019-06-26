@@ -41,7 +41,7 @@ MainWindow::~MainWindow()
  */
 void MainWindow::on_pushButton_Novo_clicked()
 {
-    Sculptor a(_Z,_Y,_Z);
+
 }
 
 /**
@@ -62,10 +62,13 @@ void MainWindow::on_pushButton_SelecionaCor_clicked()
     r = cor.red();
     g = cor.green();
     b = cor.blue();
+    _red=r;
+    _green=g;
+    _blue=b;
     msg = "r = <b>"+QString::number(r)+"</b> <br>"+
            "g = <b>"+QString::number(g)+"</b> <br>"+
            "b = <b>"+QString::number(b)+"</b>";
-    a.setColor(_red,_green,_blue,0.0);
+    a.setColor((_red/255),(_green/255),(_blue/255),0.0);
     box.setText(msg);
     box.exec();
     repaint();
@@ -105,6 +108,7 @@ int MainWindow::getPosicaoZ()
  * @brief MainWindow::posicaoAtual
  * @details Método responsável por recuperar o valor das coordenadas na posição atual
  */
+
 void MainWindow::posicaoAtual()
 {
 
@@ -113,6 +117,35 @@ void MainWindow::posicaoAtual()
     Pz=getPosicaoZ();
 
 }
+
+int MainWindow::getx1Rect()
+{
+    return ui->lcdNumber_Xret->value();
+}
+int MainWindow::gety1Rect()
+{
+    return ui->lcdNumber_Yret->value();
+}
+int MainWindow::getz1Rect()
+{
+    return ui->lcdNumber_Zret->value();
+}
+int MainWindow::getRadiusSphere()
+{
+    return ui->lcdNumber_RaioEsfera->value();
+}
+int MainWindow::getRXEllipsoid()
+{
+    return ui->lcdNumber_Xellipsoid->value();
+}
+int MainWindow::getRYEllipsoid()
+{
+    return ui->lcdNumber_Yellipsoid->value();
+}
+int MainWindow::getRZEllipsoid()
+{
+    return ui->lcdNumber_Zellipsoid->value();
+}
 /**
  * @brief MainWindow::on_pushButton_putVoxel_clicked
  * @details Método responsável pela crição do voxel ao clique do botão putVoxel
@@ -120,7 +153,6 @@ void MainWindow::posicaoAtual()
 void MainWindow::on_pushButton_putVoxel_clicked()
 {
     posicaoAtual();
-    a.setColor((_red/255),(_green/255),(_blue/255),0.0);
     a.putVoxel(Px,Py,Pz);
 
 }
@@ -130,7 +162,66 @@ void MainWindow::on_pushButton_putVoxel_clicked()
  */
 void MainWindow::on_pushButton_Salvar_clicked()
 {
-    a.writeOFF("testeM.OFF");
+    a.writeOFF("teste.OFF");
 }
 
 
+
+void MainWindow::on_pushButton_cutVoxel_clicked()
+{
+    posicaoAtual();
+    a.cutVoxel(Px,Py,Pz);
+}
+
+void MainWindow::on_pushButton_putRect_clicked()
+{
+    posicaoAtual();
+    int x1,y1,z1;
+    x1=getx1Rect();
+    y1=gety1Rect();
+    z1=getz1Rect();
+    a.putBox(Px,x1,Py,y1,Pz,z1);
+}
+
+
+void MainWindow::on_pushButton_cutRect_clicked()
+{
+    posicaoAtual();
+    int x1,y1,z1;
+    x1=getx1Rect();
+    y1=gety1Rect();
+    z1=getz1Rect();
+    a.cutBox(Px,x1,Py,y1,Pz,z1);
+}
+
+
+void MainWindow::on_pushButton_putSphere_clicked()
+{
+    posicaoAtual();
+    int r=getRadiusSphere();
+    a.putSphere(Px,Py,Pz,r);
+}
+
+void MainWindow::on_pushButton_cutSphere_clicked()
+{
+    posicaoAtual();
+    int r=getRadiusSphere();
+    a.cutSphere(Px,Py,Pz,r);
+}
+
+void MainWindow::on_pushButton_putEllipsoid_clicked()
+{
+    posicaoAtual();
+    int rx=getRXEllipsoid();
+    int ry=getRYEllipsoid();
+    int rz=getRZEllipsoid();
+    a.putEllipsoid(Px,Py,Pz,rx,ry,rz);
+}
+void MainWindow::on_pushButton_cutEllipsoid_clicked()
+{
+    posicaoAtual();
+    int rx=getRXEllipsoid();
+    int ry=getRYEllipsoid();
+    int rz=getRZEllipsoid();
+    a.cutEllipsoid(Px,Py,Pz,rx,ry,rz);
+}
