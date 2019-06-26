@@ -17,5 +17,5 @@
 <p align="center"><img src="https://raw.githubusercontent.com/thuize/Escultor3D/feature-readme/imagens/visualizacao.jpeg?token=AC7QGUSKK2EIZSEKZFFFN4C5DQTXW"></p>
 
 <a2><b>Colaboradores:</b></a2><br>
-<p>Felipe Lima</p>
+<p>Felipe Lima de Medeiros</p>
 <p>Thuize Thainá Melo Nascimento</p>
