@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plotter',['Plotter',['../classPlotter.html',1,'']]]
+  ['mainwindow',['MainWindow',['../classMainWindow.html',1,'']]]
 ];

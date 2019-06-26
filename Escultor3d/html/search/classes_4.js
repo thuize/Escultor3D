@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['voxel',['Voxel',['../structVoxel.html',1,'']]]
+  ['sculptor',['Sculptor',['../classSculptor.html',1,'']]]
 ];

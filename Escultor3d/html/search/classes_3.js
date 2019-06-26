@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sculptor',['Sculptor',['../classSculptor.html',1,'']]]
+  ['plotter',['Plotter',['../classPlotter.html',1,'']]]
 ];

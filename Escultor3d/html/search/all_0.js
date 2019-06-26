@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['classe',['Classe',['../classClasse.html',1,'Classe'],['../classClasse.html',1,'Classe']]],
+  ['criamatriz',['criaMatriz',['../classMainWindow.html#a7627fd74185aeaef292e97d081026ea7',1,'MainWindow']]],
   ['cutbox',['cutBox',['../classSculptor.html#aa84a1b12b09e9e103fc8d78f8d1bc00f',1,'Sculptor']]],
   ['cutellipsoid',['cutEllipsoid',['../classSculptor.html#a18d2922c111c4c13653ee07d878151ad',1,'Sculptor']]],
   ['cutsphere',['cutSphere',['../classSculptor.html#a67ab8c0ba5116adb8af1d01ad373ac15',1,'Sculptor']]],

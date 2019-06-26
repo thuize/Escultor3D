@@ -3,12 +3,19 @@
 #include <QBrush>
 #include <QPen>
 
-
+/**
+ * @brief Plotter::Plotter
+ * @param parent
+ */
 Plotter::Plotter(QWidget *parent) : QWidget(parent)
 {
 
 }
-
+/**
+ * @brief Plotter::paintEvent
+ * @param event
+ * @details Método responsável por executar as instruções de desenho dos voxels e figuras geométricas.
+ */
 void Plotter::paintEvent(QPaintEvent *event)
 {
 
