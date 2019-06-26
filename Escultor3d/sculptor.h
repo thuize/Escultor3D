@@ -69,7 +69,6 @@ public:
     void writeOFF(string filename);
     void writeVECT(string filename);
 
-
 };
 
 #endif // SCULPTOR_H

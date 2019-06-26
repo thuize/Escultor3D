@@ -27,6 +27,13 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_15">
        <item>
+        <widget class="QPushButton" name="pushButton_Novo">
+         <property name="text">
+          <string>Novo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="pushButton_Salvar">
          <property name="text">
           <string>Salvar</string>

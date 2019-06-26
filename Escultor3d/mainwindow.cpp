@@ -6,6 +6,9 @@
 #include <QColor>
 #include <QAction>
 #include "dimensao.h"
+#include "sculptor.h"
+
+static Sculptor a(_Z,_Y,_Z);
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -18,6 +21,12 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_Novo_clicked()
+{
+   Sculptor a(_Z,_Y,_Z);
+}
+
 
 void MainWindow::on_pushButton_SelecionaCor_clicked()
 {
@@ -40,6 +49,8 @@ void MainWindow::on_pushButton_SelecionaCor_clicked()
     box.exec();
     repaint();
 }
+
+
 int MainWindow::getPosicaoX()
 {
     return ui->lcdNumber_PosicaoX->value();
@@ -55,16 +66,23 @@ int MainWindow::getPosicaoZ()
 
 void MainWindow::posicaoAtual()
 {
-    int Px=getPosicaoX();
-    int Py=getPosicaoY();
-    int Pz=getPosicaoZ();
+
+    Px=getPosicaoX();
+    Py=getPosicaoY();
+    Pz=getPosicaoZ();
+
 }
 
-/*void MainWindow::on_pushButton_Novo_clicked()
+void MainWindow::on_pushButton_putVoxel_clicked()
 {
-    Dimensao novo;
-    novo.exec();
+    posicaoAtual();
+    a.putVoxel(Px,Py,Pz);
 
-}*/
+}
+
+void MainWindow::on_pushButton_Salvar_clicked()
+{
+    a.writeOFF("testeM.OFF");
+}
 
 

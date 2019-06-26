@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include <QColor>
 
+static int Px;
+static int Py;
+static int Pz;
+
 namespace Ui {
 class MainWindow;
 }
@@ -15,10 +19,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void criaMatriz();
     int getPosicaoX();
     int getPosicaoY();
     int getPosicaoZ();
     void posicaoAtual();
+
 
 private:
     Ui::MainWindow *ui;
@@ -26,15 +32,13 @@ private:
     QAction *actionMudaCor;
     int cor;
 
-
 public slots:
 //void mudaCor();
 private slots:
 void on_pushButton_SelecionaCor_clicked();
-
-
-void on_pushButton_3_toggled(bool checked);
-void on_pushButton_3_clicked();
+void on_pushButton_putVoxel_clicked();
+void on_pushButton_Salvar_clicked();
+void on_pushButton_Novo_clicked();
 };
 
 

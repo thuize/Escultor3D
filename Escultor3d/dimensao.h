@@ -4,6 +4,10 @@
 #include <QDialog>
 #include "mainwindow.h"
 
+// VARIAVEIS GLOBAIS PARA ARMEZENAR O TAMANHO DA MATRIZ
+static int _X=99;
+static int _Y=99;
+static int _Z=99;
 
 namespace Ui {
 class Dimensao;
