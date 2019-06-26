@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QColor>
 
+static int _X=99;
+static int _Y=99;
+static int _Z=99;
 static int Px;
 static int Py;
 static int Pz;
@@ -31,6 +34,9 @@ private:
     QColor lineColor;
     QAction *actionMudaCor;
     int cor;
+    float _red;
+    float _green;
+    float _blue;
 
 public slots:
 //void mudaCor();

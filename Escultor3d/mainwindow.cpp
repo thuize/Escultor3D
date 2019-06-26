@@ -24,14 +24,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_Novo_clicked()
 {
-   Sculptor a(_Z,_Y,_Z);
+    Sculptor a(_Z,_Y,_Z);
 }
 
 
 void MainWindow::on_pushButton_SelecionaCor_clicked()
 {
 
-    int r, g, b;
+    float r, g, b;
     QColor cor;
     QMessageBox box;
     QString msg;
@@ -43,11 +43,15 @@ void MainWindow::on_pushButton_SelecionaCor_clicked()
     g = cor.green();
     b = cor.blue();
     msg = "r = <b>"+QString::number(r)+"</b> <br>"+
-        "g = <b>"+QString::number(g)+"</b> <br>"+
-        "b = <b>"+QString::number(b)+"</b>";
+           "g = <b>"+QString::number(g)+"</b> <br>"+
+           "b = <b>"+QString::number(b)+"</b>";
+    a.setColor(_red,_green,_blue,0.0);
     box.setText(msg);
     box.exec();
     repaint();
+
+
+
 }
 
 
@@ -76,6 +80,7 @@ void MainWindow::posicaoAtual()
 void MainWindow::on_pushButton_putVoxel_clicked()
 {
     posicaoAtual();
+    a.setColor((_red/255),(_green/255),(_blue/255),0.0);
     a.putVoxel(Px,Py,Pz);
 
 }

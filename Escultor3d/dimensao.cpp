@@ -40,9 +40,7 @@ void Dimensao::on_pushButton_NovaEscultura_clicked()
     int Dx=getDimensaoX();
     int Dy=getDimensaoY();
     int Dz=getDimensaoZ();
-    _X=Dx;
-    _Y=Dy;
-    _Z=Dz;
+
     QMessageBox box;
     QString msg;
     msg = "x = <b>"+QString::number(Dx)+"</b> <br>"+
@@ -50,5 +48,8 @@ void Dimensao::on_pushButton_NovaEscultura_clicked()
         "z = <b>"+QString::number(Dz)+"</b>";
     box.setText(msg);
     box.exec();
+    _X=Dx;
+    _Y=Dy;
+    _Z=Dz;
 }
 

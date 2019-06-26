@@ -65,6 +65,19 @@ Sculptor::~Sculptor(){
     delete[] v[0];
     delete[] v;
 }
+void Sculptor::setColor(float _r, float _g, float _b, float _a){
+    if (_r>=0 && _r<=1){r=_r;}
+    else{r=0;};
+
+    if (_g>=0 && _g<=1){g=_g;}
+    else{g=0;};
+
+    if (_b>=0 && _b<=1){b=_b;}
+    else{b=0;};
+
+    if (_a>=0 && _a<=1){a=_a;}
+    else{a=0;};
+}
 void Sculptor::putVoxel(int x, int y, int z){
     if (x>=0 && x<nx && y>=0 && y<ny && z>=0 && z<nz ){
 
